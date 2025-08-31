@@ -9,7 +9,7 @@ function Header({ isDarkMode, toggleDarkMode }) {
       <div className="header-container">
         <div className="logo-title">
           <h1 className="title">Adarshan Rai</h1>
-          <span className="title-subtext">If you can't do it, Give up.</span>
+          <span className="title-subtext">Whoever made Git…I hate you with passion.</span>
         </div>
 
         <nav className="nav">

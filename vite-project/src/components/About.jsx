@@ -13,7 +13,7 @@ function About({ isDarkMode }) {
             <p>
               Hello! I'm Adarshan, a music enthusiast and a very dedicated gamer. 
               I play a lot of games, some of my favourites are Genshin Impact, 
-              Honkai Star Rail, and Wuthering Waves — and 𝗔𝗴𝘂𝘀𝘁𝗮 𝗮𝗻𝗱 𝗜𝘂𝗻𝗼 are two of 
+              Honkai Star Rail, and Wuthering Waves - and 𝗔𝗴𝘂𝘀𝘁𝗮 𝗮𝗻𝗱 𝗜𝘂𝗻𝗼 are two of 
               my favourite characters from Wuthering Waves.
             </p>
             <p className="npm-package">

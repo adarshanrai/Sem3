@@ -11,6 +11,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
 // App.jsx updated on Aug 31 for deployment with image switching support
+// new comment 
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {

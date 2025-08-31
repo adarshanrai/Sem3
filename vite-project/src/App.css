@@ -12,7 +12,7 @@
 }
 
 .dark-mode {
-  --bg-primary: linear-gradient(90deg, #1616a2, #111d40);
+  --bg-primary: linear-gradient(90deg, #1616a2, #0d193d);
   --bg-secondary: #0f3460;
   --text-primary: #f0f0f0;
   --text-secondary: #b0b0b0;

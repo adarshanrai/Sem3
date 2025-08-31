@@ -30,10 +30,10 @@ function Projects() {
               </div>
               <div className="project-links">
                 <a href="https://github.com/" className="project-link" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github"></i>
+                 
                 </a>
                 <a href="https://your-live-demo-link.com" className="project-link" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-external-link-alt"></i>
+                 
                 </a>
               </div>
             </div>
@@ -60,10 +60,10 @@ function Projects() {
               </div>
               <div className="project-links">
                 <a href="https://github.com/" className="project-link" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github"></i>
+                 
                 </a>
                 <a href="https://your-live-demo-link.com" className="project-link" target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-external-link-alt"></i>
+                
                 </a>
               </div>
             </div>

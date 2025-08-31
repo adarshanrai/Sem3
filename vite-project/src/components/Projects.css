@@ -1,0 +1,105 @@
+/* Projects.css */
+.projects {
+  padding: 6rem 0;
+  min-height: 100vh;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: linear-gradient(135deg, #d22907 0%, #ee6801 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(240, 247, 245, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.project-image {
+  height: 200px;
+  overflow: hidden;
+  background-color: #0a192f;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* crop nicely */
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Add hover zoom effect */
+.project-card:hover .project-img {
+  transform: scale(1.1);
+}
+
+
+.project-details {
+  padding: 1.5rem;
+}
+
+.project-details h3 {
+  color: #ccd6f6;
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.project-details p {
+  color: #a8b2d1;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-tech span {
+  font-size: 0.85rem;
+  color: #64ffda;
+  background-color: rgba(100, 255, 218, 0.1);
+  padding: 0.3rem 0.7rem;
+  border-radius: 15px;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  color: #ccd6f6;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #64ffda;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: rgb(248, 248, 248);
+  
+}

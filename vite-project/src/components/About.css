@@ -1,0 +1,127 @@
+/* About.css */
+.about {
+  padding: 6rem 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between; /* text left, image right */
+  align-items: center;            /* vertical center */
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1; /* let text take available space */
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.technologies {
+  margin-top: 2rem;
+}
+
+.technologies h3 {
+  color: #ccd6f6;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.technologies ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 2rem;
+  list-style: none;
+}
+
+.technologies li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.technologies li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #64ffda;
+}
+
+.about-image {
+  flex: 1; /* image takes available space */
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f6f5f4;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  /* ❌ remove margin-left, flexbox handles spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .about-content {
+    flex-direction: column; /* stack text and image */
+    text-align: center;
+  }
+
+  .about-text {
+    flex: unset;
+    width: 100%;
+  }
+
+  .about-image {
+    order: -1; /* image appears above text */
+    margin-bottom: 2rem;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .technologies ul {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+.npm-package {
+  font-size: 1.1rem;
+  color:white;
+  margin-top: 1rem;
+}
+
+.npm-package a {
+  background: linear-gradient(to right, #8B4513, #A0522D);
+  color: white;
+  padding: 6px 12px;
+  margin-left: 6px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.npm-package a:hover {
+  background: linear-gradient(to right, #A0522D, #8B4513);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}

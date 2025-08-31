@@ -12,7 +12,7 @@ function About() {
           <div className="about-text">
             <p>
               Hello! I'm Adarshan, a music enthusiast and a very dedicated gamer I play a lot of games some of my favourites are Genshin Impact, Honkai Star Rail and Wuthering Waves,
-              and Agusta is one of my favourite characters from Wuthering Waves.
+              and 𝘼̲𝙜̲𝙪̲𝙨̲𝙩̲𝙖̲ is one of my favourite characters from Wuthering Waves.
             </p>
             <p className="npm-package">
   Check out my NPM package:{" "}

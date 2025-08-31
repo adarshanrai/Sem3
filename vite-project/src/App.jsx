@@ -10,8 +10,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
-// App.jsx updated on Aug 31 for deployment
-
+// App.jsx updated on Aug 31 for deployment with image switching support
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -29,12 +28,12 @@ function App() {
   }, [isDarkMode]);
 
   const toggleDarkMode = () => {
-    setIsDarkMode(prev => !prev);
+    setIsDarkMode((prev) => !prev);
   };
 
   return (
     <div className="App">
-      {/* Pass the icon elements along with toggle function */}
+      {/* Header with dark mode toggle */}
       <Header
         isDarkMode={isDarkMode}
         toggleDarkMode={toggleDarkMode}
@@ -42,10 +41,14 @@ function App() {
           isDarkMode ? <i className="fas fa-sun"></i> : <i className="fas fa-moon"></i>
         }
       />
+
+      {/* Main content */}
       <main>
-        <About isDarkMode={isDarkMode} />
+        <About isDarkMode={isDarkMode} /> {/* 👈 image will swap here */}
         <Projects isDarkMode={isDarkMode} />
       </main>
+
+      {/* Footer */}
       <Footer isDarkMode={isDarkMode} />
     </div>
   );

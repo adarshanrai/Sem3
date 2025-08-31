@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <p>© Adarshan Rai. MSU</p>
+          <p>Adarshan Rai. MSU</p>
           <div className="social-links">
             <a href="https://github.com/adarshanrai" aria-label="GitHub">Github
               

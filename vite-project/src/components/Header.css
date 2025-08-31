@@ -179,3 +179,17 @@ a{
     font-size: 0.7rem;
   }
 }
+
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.2);
+}

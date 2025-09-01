@@ -117,7 +117,7 @@ a{
 .mobile-menu-toggle span {
   width: 100%;
   height: 2px;
-  background-color: #64ffda;
+  background-color: white;
   border-radius: 2px;
   transition: all 0.3s ease;
   transform-origin: center;
@@ -139,9 +139,9 @@ a{
     right: 0;
     width: 70%;
     height: 100vh;
-    background-color: #0a192f;
+
     flex-direction: column;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     transform: translateX(100%);
     transition: transform 0.4s ease-in-out;
@@ -159,6 +159,7 @@ a{
   
   .nav-links li {
     margin: 1rem 0;
+    font-size: 4rem;
   }
   
   .resume-btn {
@@ -193,3 +194,16 @@ a{
 .dark-mode-toggle:hover {
   transform: scale(1.2);
 }
+
+/* Light mode */
+.mobile-menu {
+  background-color: #ffffff; /* light background */
+  color: #000000; /* text */
+}
+
+/* Dark mode */
+.dark .mobile-menu {
+  background-color: #0a192f; /* dark background */
+  color: #ffffff; /* text */
+}
+

@@ -1,0 +1,140 @@
+/* Languages.css */
+.languages {
+  padding: 5rem 0;
+ 
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.languages::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 1;
+}
+
+.languages .container {
+  position: relative;
+  z-index: 2;
+}
+
+.languages .section-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.languages .section-title::after {
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.language-card {
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(255, 69, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.language-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(255, 69, 0, 0.3);
+}
+
+.language-icon {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.language-card:hover .language-icon {
+  transform: scale(1.2);
+}
+
+.language-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .languages-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .language-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .language-icon {
+    font-size: 2.5rem;
+  }
+  
+  .language-name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .languages {
+    padding: 3rem 0;
+  }
+  
+  .languages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .language-card {
+    padding: 1.2rem 0.8rem;
+  }
+  
+  .language-icon {
+    font-size: 2rem;
+  }
+  
+  .language-name {
+    font-size: 1rem;
+  }
+
+[data-theme="dark"] .languages {
+  background: var(--bg-primary, linear-gradient(90deg, #1616a2, #0d193d));
+  color: var(--text-primary, #f0f0f0);
+}
+
+[data-theme="dark"] .languages h2 {
+  color: var(--text-primary, #f0f0f0);
+}
+
+[data-theme="dark"] .language-card {
+  background: var(--card-bg, rgba(255, 255, 255, 0.05));
+  box-shadow: var(--shadow, 0 5px 15px rgba(0, 0, 0, 0.4));
+}
+
+[data-theme="dark"] .language-card:hover {
+  background: var(--accent, #f8610a);
+  color: #fff;
+}
+}
+

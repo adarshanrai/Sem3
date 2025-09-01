@@ -3,22 +3,33 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
-          <p>Adarshan Rai. MSU</p>
-          <div className="social-links">
-            <a href="https://github.com/adarshanrai" aria-label="GitHub">Github
+    <section id="contact">
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-content">
+            <p>Adarshan Rai. MSU</p>
+            <div className="social-links">
+              <a href="https://github.com/adarshanrai" aria-label="GitHub">
+                Github
+              </a>
+              <a
+                href="https://www.linkedin.com/in/adarshan-rai-a09798324/"
+                aria-label="LinkedIn"
+              >
+                LinkedIn
+              </a>
+              <a
+                 href="mailto:adarshanrai76@example.com" aria-label="Email">
               
-            </a>
-            <a href="https://www.linkedin.com/in/adarshan-rai-a09798324/" aria-label="LinkedIn">
-              LinkedIn
-            </a>
-            
+            Email
+              </a>
+
+
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </section>
   );
 }
 

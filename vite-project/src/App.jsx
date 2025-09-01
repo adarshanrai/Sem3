@@ -7,6 +7,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 // Import components
 import Header from "./components/Header";
 import About from "./components/About";
+import Languages from "./components/Languages";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
@@ -46,6 +47,7 @@ function App() {
       {/* Main content */}
       <main>
         <About isDarkMode={isDarkMode} /> {/* 👈 image will swap here */}
+         <Languages isDarkMode={isDarkMode} /> 
         <Projects isDarkMode={isDarkMode} />
       </main>
 

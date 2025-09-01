@@ -16,6 +16,7 @@ function About({ isDarkMode }) {
               Honkai Star Rail, and Wuthering Waves - and 𝗔𝗴𝘂𝘀𝘁𝗮 𝗮𝗻𝗱 𝗜𝘂𝗻𝗼 are two of 
               my favourite characters from Wuthering Waves.
             </p>
+            <div className="npm-wrapper">
             <p className="npm-package">
               Check out my NPM package:{" "}
               <a
@@ -26,18 +27,6 @@ function About({ isDarkMode }) {
                 Attendancecalc
               </a>
             </p>
-
-            <div className="technologies">
-              <h3>Technologies I can manage to work with:</h3>
-              <ul>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>HTML & CSS</li>
-                <li>Node.js</li>
-                <li>Git & GitHub</li>
-                <li>C</li>
-                <li>Python</li>
-              </ul>
             </div>
           </div>
           <div className="about-image">

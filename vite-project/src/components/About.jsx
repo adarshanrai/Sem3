@@ -18,7 +18,7 @@ function About({ isDarkMode }) {
             </p>
             <div className="npm-wrapper">
             <p className="npm-package">
-              Check out my NPM package:{" "}
+              Check out my NPM package →{" "}
               <a
                 href="https://www.npmjs.com/package/attendancecalc"
                 target="_blank"

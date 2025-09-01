@@ -85,8 +85,8 @@
 }
 
 .npm-package a {
-  background: 0 2px 6px rgba(0,0,0,0.2);
-  color: white;
+  background: 0 2px 6px rgba(24, 16, 12, 0.2);
+  color: rgb(4, 1, 10);
   padding: 6px 12px;
   margin-top: 10px;
   margin-left: 6px;
@@ -95,10 +95,11 @@
   font-weight: 500;
   transition: 0.3s ease;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border: 2ps solid white;
 }
 
 .npm-package a:hover {
-  background: linear-gradient(to right, #A0522D, #8B4513);
+  background: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }

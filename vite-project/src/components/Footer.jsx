@@ -19,7 +19,7 @@ function Footer() {
                 LinkedIn
               </a>
               <a
-                 href="mailto:adarshanrai76@example.com" aria-label="Email">
+                 href="mailto:adarshanrai76@gmail.com" aria-label="Email">
               
             Email
               </a>
